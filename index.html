@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore courses and learning support at BrightPath Academy.">
+  <title>BrightPath Academy | Learn with Confidence</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">BrightPath<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+        <h1>Learn today.<br>Lead tomorrow.</h1>
+        <p class="hero-text">
+          Build strong foundations, develop confidence, and
+          take the next step toward your academic goals.
+        </p>
+        <a class="button" href="#contact">Enquire about courses</a>
+      </div>
+      <div class="hero-card">
+        <span class="book-icon">✦</span>
+        <p class="card-label">YOUR FUTURE</p>
+        <h2>One step at a time.</h2>
+        <p>Learn with a plan. Grow with confidence.</p>
+      </div>
+    </section>
+
+    <section class="section" id="courses">
+      <p class="eyebrow">WHAT YOU CAN LEARN</p>
+      <h2>Explore our courses</h2>
+      <p class="section-intro">
+        Learning support designed around your goals.
+      </p>
+
+      <div class="course-grid">
+        <article class="course-card">
+          <span class="course-number">01</span>
+          <h3>School Tuition</h3>
+          <p>Build a stronger understanding of core subjects.</p>
+        </article>
+        <article class="course-card">
+          <span class="course-number">02</span>
+          <h3>Computer Basics</h3>
+          <p>Learn essential computer skills step by step.</p>
+        </article>
+        <article class="course-card">
+          <span class="course-number">03</span>
+          <h3>Spoken English</h3>
+          <p>Practise communication and everyday English.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">WHY BRIGHTPATH?</p>
+        <h2>A supportive place to grow.</h2>
+      </div>
+      <p>
+        We believe learning works best with clear goals,
+        consistent practice, and guidance that meets students
+        where they are.
+      </p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <p class="eyebrow">TAKE THE NEXT STEP</p>
+      <h2>Let's talk about your goals.</h2>
+      <p class="section-intro">
+        Send an enquiry to learn more about our courses.
+      </p>
+
+      <form id="enquiryForm" class="enquiry-form">
+        <label for="studentName">Your name</label>
+        <input id="studentName" name="studentName"
+          type="text" placeholder="Enter your name" required>
+
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel"
+          placeholder="Enter your phone number"
+          pattern="[0-9+\s()-]{7,20}" required>
+
+        <label for="course">Interested course</label>
+        <select id="course" name="course" required>
+          <option value="">Choose a course</option>
+          <option>School Tuition</option>
+          <option>Computer Basics</option>
+          <option>Spoken English</option>
+        </select>
+
+        <button class="button" type="submit">Submit enquiry</button>
+        <p id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>BrightPath Academy · Demo website for portfolio use</p>
+  </footer>
+</body>
+</html>
